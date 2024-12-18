@@ -14,13 +14,13 @@ public class Demo {
   //ede2wd
 
 		//ewfew
-<<<<<<< Updated upstream
+// Updated upstream
+ //pdated upstream
 
 		//efewfewf
-=======
+
   
-  //ewfewfe
->>>>>>> Stashed changes
+  
 	}
 	
 
