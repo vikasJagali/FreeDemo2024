@@ -33,7 +33,7 @@ public class Demo {
 		
 		System.out.println(" Sme browser with : "+System.getProperty("browserName"));
 		
-		System.out.println("==================================================================================================");
+		System.out.println("=================================================================================================");
 
 	}
 
