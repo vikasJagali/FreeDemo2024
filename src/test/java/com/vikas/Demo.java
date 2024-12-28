@@ -9,20 +9,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Demo {
 
 	WebDriver driver;
 
+	@Parameters("browser")
 	@Test
-	public void doWalk() {
+	public void doWalk(@Optional("default browser") String browser) {
 
 		driver.get("https://www.google.co.in/");
 		WebElement ele = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
 		ele.sendKeys("vikas");
 
 		ele.sendKeys(Keys.ENTER);
+		
+		System.out.println("Browser Name: " + browser);
 
 	}
 
