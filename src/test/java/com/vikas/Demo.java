@@ -17,10 +17,9 @@ public class Demo {
 
 	WebDriver driver;
 
-	//@Parameters("browser")
-	//@Optional("default browser") String browser
+	@Parameters("browser")
 	@Test
-	public void doWalk() {
+	public void doWalk(@Optional("default browser") String browser) {
 
 		driver.get("https://www.google.co.in/");
 		WebElement ele = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
@@ -29,10 +28,10 @@ public class Demo {
 		ele.sendKeys(Keys.ENTER);
 		
 		System.out.println("==================================================================================================");
-		//System.out.println("Browser Name: " + browser);
+		System.out.println("Browser Name: " + browser);
 		System.out.println("==================================================================================================");
 		
-		System.out.println(" Sme browser with : "+System.getProperty("browser"));
+		System.out.println(" Sme browser with : "+System.getProperty("browserName"));
 		
 		System.out.println("==================================================================================================");
 
