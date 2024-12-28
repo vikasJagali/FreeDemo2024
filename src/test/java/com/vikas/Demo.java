@@ -18,9 +18,9 @@ public class Demo {
 	WebDriver driver;
 
 	//@Parameters("browser")
-	//@Optional("default browser")
+	//@Optional("default browser") String browser
 	@Test
-	public void doWalk( String browser) {
+	public void doWalk() {
 
 		driver.get("https://www.google.co.in/");
 		WebElement ele = driver.findElement(By.xpath("//textarea[@id='APjFqb']"));
